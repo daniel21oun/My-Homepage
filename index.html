@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Smith — Academic Homepage</title>
+    <style>
+        :root {
+            --primary: #2c5aa0;
+            --accepted: #1a7f37;
+            --preprint: #9a6700;
+            --border: #e1e4e8;
+            --bg: #ffffff;
+            --text: #24292e;
+            --muted: #586069;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid var(--primary);
+        }
+        header h1 {
+            margin: 0 0 8px;
+            font-size: 2.2em;
+            color: var(--primary);
+        }
+        header .tagline {
+            margin: 0;
+            color: var(--muted);
+            font-size: 1.05em;
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        .pub-item {
+            margin-bottom: 28px;
+            padding: 18px 22px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: #fafbfc;
+        }
+        .pub-title {
+            font-size: 1.15em;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .pub-meta {
+            margin: 4px 0;
+            font-size: 0.97em;
+        }
+        .label {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        .label.accepted {
+            background: #dcffe4;
+            color: var(--accepted);
+        }
+        .label.preprint {
+            background: #fff8c5;
+            color: var(--preprint);
+        }
+        .label.oral {
+            background: #ddf4ff;
+            color: #0550ae;
+        }
+        .code-link {
+            font-family: SFMono-Regular, Consolas, monospace;
+            font-size: 0.92em;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        .section { margin-bottom: 40px; }
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>John Smith</h1>
+        <p class="tagline">Researcher in Machine Learning &amp; Natural Language Processing</p>
+    </header>
+
+    <section class="section" id="about">
+        <h2>About</h2>
+        <p>I am a researcher focused on large language models, efficient architectures, and contextual reasoning. My work explores simplifying and optimizing LLMs for better performance and computational efficiency.</p>
+    </section>
+
+    <section class="section" id="publications">
+        <h2>Publications</h2>
+
+        <!-- Accepted paper: Ipsum Lorem is All You Need (COML 2025, Oral) -->
+        <div class="pub-item">
+            <div class="pub-title">Ipsum Lorem is All You Need</div>
+            <div class="pub-meta">
+                Status:
+                <span class="label accepted">Accepted</span>
+                <span class="label oral">Oral Presentation (top ~1%)</span>
+                — COML 2025 (Conference on Machine Learning)
+            </div>
+            <div class="pub-meta">
+                Code:
+                <span class="label accepted">Open Source</span>
+                <a class="code-link" href="https://github.com/daniel21oun/ipsum-lorem-all-you-need">github.com/daniel21oun/ipsum-lorem-all-you-need</a>
+            </div>
+        </div>
+
+        <!-- Accepted paper: Optimizing LLMs for Contextual Reasoning (COAI 2025) -->
+        <div class="pub-item">
+            <div class="pub-title">Optimizing Large Language Models for Contextual Reasoning in Multi-Task Environments</div>
+            <div class="pub-meta">
+                Status:
+                <span class="label accepted">Accepted</span>
+                — COAI 2025 (Conference on Artificial Intelligence)
+            </div>
+            <div class="pub-meta">
+                Code:
+                <span class="label accepted">Open Source</span>
+                <a class="code-link" href="https://github.com/daniel21oun/optimizing-llms-contextual-reasoning">github.com/daniel21oun/optimizing-llms-contextual-reasoning</a>
+            </div>
+        </div>
+
+        <!-- Preprint / Under Review: Enhancing LLMs -->
+        <div class="pub-item">
+            <div class="pub-title">Enhancing LLMs</div>
+            <div class="pub-meta">
+                Status:
+                <span class="label preprint">Preprint (Under Review)</span>
+            </div>
+            <div class="pub-meta">
+                Code: <span class="label preprint">Not yet open-sourced</span>
+            </div>
+        </div>
+
+        <!-- Preprint / Under Review: LLM Adaptive Learning -->
+        <div class="pub-item">
+            <div class="pub-title">LLM Adaptive Learning</div>
+            <div class="pub-meta">
+                Status:
+                <span class="label preprint">Preprint (Under Review)</span>
+            </div>
+            <div class="pub-meta">
+                Code: <span class="label preprint">Not yet open-sourced</span>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 John Smith &middot; Last updated: December 2025</p>
+    </footer>
+
+</body>
+</html>
